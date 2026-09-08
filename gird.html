@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+     * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.dashboard {
+    min-height: 100vh;
+
+    display: grid;
+
+    grid-template-columns: 220px 1fr;
+
+    grid-template-rows: 70px 1fr 50px;
+
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+}
+
+.header {
+    grid-area: header;
+
+    padding: 20px;
+
+    background-color: #222;
+    color: white;
+}
+
+.sidebar {
+    grid-area: sidebar;
+
+    padding: 20px;
+
+    background-color: #eeeeee;
+}
+
+.main {
+    grid-area: main;
+
+    padding: 30px;
+}
+
+.footer {
+    grid-area: footer;
+
+    padding: 15px;
+
+    text-align: center;
+
+    background-color: #222;
+    color: white;
+}
+    </style>
+  </head>
+  <body>
+    <div class="dashboard">
+      <header class="header">Job Tracker</header>
+
+      <aside class="sidebar">
+        <h3>Menu</h3>
+
+        <p>Dashboard</p>
+        <p>Applications</p>
+        <p>Settings</p>
+      </aside>
+
+      <main class="main">
+        <h1>Dashboard</h1>
+
+        <div class="cards">
+          <div class="card">
+            Applications
+            <strong>25</strong>
+          </div>
+
+          <div class="card">
+            Interviews
+            <strong>8</strong>
+          </div>
+
+          <div class="card">
+            Offers
+            <strong>2</strong>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">Job Tracker © 2026</footer>
+    </div>
+  </body>
+</html>

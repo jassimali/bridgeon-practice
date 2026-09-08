@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Jassim's student portfolio"
+    >
+
+    <title>Jassim's Portfolio</title>
+
+    <style>
+
+    
+    .main_title::after{
+        content: "";
+        display: block;
+    }
+    input:focus{
+        border:2px solid blue;
+        outline: none;
+    }
+
+        button:hover {
+    background-color: red;
+}
+        button:active {
+    transform: scale(0.95);
+}
+
+        .card {
+            
+            border:5px dotted brown;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        #main-title {
+            color: rgb(191, 255, 0);
+        }
+
+        button{
+            background-color: rgb(191, 255, 0);
+            size: 16px;
+        }
+
+        
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1 id="main-title">
+            Jassim's Portfolio
+        </h1>
+
+        <nav class="nav-bar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="card">
+
+            <h2>About Me</h2>
+
+            <p>
+                I am a Computer Science student
+                interested in <strong>AI</strong>
+                and <strong>Web Development</strong>.
+            </p>
+
+        </section>
+
+
+        <section class="card">
+
+            <h2>Skills</h2>
+
+            <ul>
+                <li>Python</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+            </ul>
+
+        </section>
+
+
+        <section class="card">
+
+            <h2>Student Details</h2>
+
+            <table border="">
+
+                <thead>
+
+                    <tr>
+                        <th>Name</th>
+                        <th>Course</th>
+                        <th>Year</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Jassim</td>
+                        <td>CSE</td>
+                        <td>4th</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+        <section class="card">
+
+            <h2>Contact Me</h2>
+
+            <form>
+
+                <label for="name">
+                    Name:
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                >
+
+                <br><br>
+
+
+                <label for="email">
+                    Email:
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                >
+
+                <br><br>
+
+                <label for="country">
+                    Country:
+                </label>
+
+                <select id="country">
+                    <option>USA</option>
+                    <option>India</option>
+                    <option>Pakistan</option>
+                    <option>Srilanka</option>
+                    <option>Bangladesh</option>
+                </select>
+
+                <br><br>
+
+                <label for="message">
+                    Message:
+                </label>
+
+                <br>
+
+                <textarea
+                    id="message"
+                    rows="5"
+                ></textarea>
+
+                <br><br>
+
+                <button type="reset">
+                    Reset
+                </button>
+
+                <button type="submit">
+                    Send
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 Jassim. All rights reserved.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
