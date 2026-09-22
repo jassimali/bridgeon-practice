@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+      <p id="par">1</p>
+      <button id="bt">count</button>
+      <button id="rt">RESET</button>
+      <script>
+
+        const x= document.getElementById("par");
+        const btn =document.getElementById("bt");
+        const rst =document.getElementById("rt");
+
+        let count=Number(x.innerHTML);
+        btn.addEventListener("click",add);
+        rst.addEventListener("click",rest);
+
+
+
+
+        function add(){
+          count+=1
+          x.innerHTML=count;
+        }
+        function rest(){
+          count=0
+          x.innerHTML=count;
+        }
+
+
+      </script>
+  </body>
+</html>
