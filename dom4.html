@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+     <input type="text" id="new">
+    <button id="add">Add</button>
+
+
+      <ul id="list">
+        <li>Jassim</li>
+        <li>Shadin</li>
+        <li>Femin</li>
+        <li>Sreelesh</li>
+        <li>Siddarth</li>
+      </ul>
+     
+      <button id="btn">Delete</button>
+      <script>
+
+      const y =document.getElementById("new")
+      add.addEventListener("click",addd)
+
+      function addd(){
+        const newItem=document.createElement("li");
+        newItem.textContent=y.value;
+        x.appendChild(newItem);
+      }
+
+      const x=document.getElementById("list");
+      btn.addEventListener("click",rem)
+
+      function rem(){
+          x.lastElementChild.remove();
+      }
+
+      </script>
+  </body>
+</html>

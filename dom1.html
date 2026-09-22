@@ -1,0 +1,26 @@
+/*question4*/
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+  </head>
+  <body>
+      <p style="font-size:30px;" id="p1">HEllo World</p>
+      <button onclick="inc()">Increase</button>
+      <button onclick="dec()">Decrease</button>
+      
+
+    <script>
+      let currentSize=30;
+      function inc(){
+        currentSize+=2;
+        document.getElementById("p1").style.fontSize = currentSize +"px";
+      }
+      function dec(){
+        currentSize-=2;
+        document.getElementById("p1").style.fontSize = currentSize +"px";
+      }
+    </script>
+      
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #myBox {
+      width: 100px;
+      height: 100px;
+      background-color: #3498db;
+    /*margin-top: 15px;
+      transition: width 0.2s, height 0.2s; /* optional smooth resizing */
+    }
+  </style>
+</head>
+<body>
+
+  <h1 style="font-size: 30px;" id="myText">Adjust My Size!</h1>
+
+  <button type="button" onclick="increaseSize()">Increase Text</button>
+  <button type="button" onclick="decreaseSize()">Decrease Text</button>
+
+  <hr>
+
+  <div id="myBox"></div>
+
+  <br>
+  <button type="button" onclick="increaseBoxSize()">Increase Box</button>
+  <button type="button" onclick="decreaseBoxSize()">Decrease Box</button>
+
+  <script>
+    // Text Sizing
+    let currentTextSize = 30;
+
+    function increaseSize() {
+      currentTextSize += 4;
+      document.getElementById('myText').style.fontSize = currentTextSize + 'px';
+    }
+
+    function decreaseSize() {
+      currentTextSize -= 4;
+      document.getElementById('myText').style.fontSize = currentTextSize + 'px';
+    }
+
+    // Box Sizing
+    let currentBoxSize = 100; // starting width & height in px
+
+    function increaseBoxSize() {
+      currentBoxSize += 20;
+      let box = document.getElementById('myBox');
+      box.style.width = currentBoxSize + 'px';
+      box.style.height = currentBoxSize + 'px';
+    }
+
+    function decreaseBoxSize() {
+      // Prevents the box from shrinking below 20px
+      if (currentBoxSize > 20) {
+        currentBoxSize -= 20;
+        let box = document.getElementById('myBox');
+        box.style.width = currentBoxSize + 'px';
+        box.style.height = currentBoxSize + 'px';
+      }
+    }
+  </script>
+
+</body>
+</html>
