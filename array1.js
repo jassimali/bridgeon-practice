@@ -1,5 +1,3 @@
 console.log(`hello my name is 
-    
-    
-    johnny apple
+    ali apple
     seed`)
